@@ -1,0 +1,14 @@
+/* Write your CSS here */
+.img {
+  width: 200px;
+  height: 150px;
+}
+.name {
+  font-family: 'Roboto', 'Open Sans';
+  font-size: 16px;
+  font-weight: 400px;
+}
+.card_container {
+  width: 200px;
+  margin: 10px;
+}

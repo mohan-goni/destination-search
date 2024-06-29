@@ -1,0 +1,55 @@
+/* Write your CSS here */
+.bg-container {
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10%;
+}
+.heading {
+  font-family: 'Roboto', 'Open Sans';
+}
+.input {
+  width: 200px;
+  height: 35px;
+  background-color: #f1f5f9;
+  border-style: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.destination-search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+
+  overflow-y: hidden;
+}
+@media screen and (max-width: 768px) {
+  .bg-container {
+    background-color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
