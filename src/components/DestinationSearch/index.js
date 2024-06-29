@@ -31,11 +31,11 @@ class DestinationSearch extends Component {
             onChange={this.onChangeText}
             value={text}
           />
-          <div className="cards-container">
+          <ul className="cards-container">
             {filteredDestinationList.map(eachItem => (
               <DestinationItem eachItem={eachItem} key={eachItem.id} />
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     )
