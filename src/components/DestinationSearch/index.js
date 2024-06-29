@@ -24,13 +24,23 @@ class DestinationSearch extends Component {
       <div className="bg-container">
         <div className="destination-search-container">
           <h1 className="heading">Destination Search</h1>
-          <input
-            type="search"
-            placeholder="Search"
-            className="input"
-            onChange={this.onChangeText}
-            value={text}
-          />
+          <div className="input-search-container">
+            <input
+              type="search"
+              placeholder="Search"
+              className="input"
+              onChange={this.onChangeText}
+              value={text}
+            />
+            <div className="search-icon-container">
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/destinations-search-icon-img.png"
+                alt="search icon"
+                className="search-icon"
+              />
+            </div>
+          </div>
+
           <ul className="cards-container">
             {filteredDestinationList.map(eachItem => (
               <DestinationItem eachItem={eachItem} key={eachItem.id} />
